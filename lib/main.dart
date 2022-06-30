@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:untitled/screens/MPIN_Login_Show.dart';
 import 'package:untitled/screens/homescreen.dart';
+import 'package:untitled/screens/screens.dart';
 
 import 'routes/get_routes.dart';
+import 'screens/NewOrder.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,9 +20,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'VKJ',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: HomeScreen(),
+      home: MpinLoginShow(),
       getPages: AppPages.pages,
     );
   }
