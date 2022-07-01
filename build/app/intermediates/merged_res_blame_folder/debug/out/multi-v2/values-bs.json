@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/chitrasathvara/StudioProjects/untitled/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-bs/values-bs.xml",
+            "outputFile": "/Users/mitaljoshi/Projects/Flutter_Projects/VKJ/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-bs/values-bs.xml",
             "map": [
                 {
-                    "source": "/Users/chitrasathvara/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/res/values-bs/values-bs.xml",
+                    "source": "/Users/mitaljoshi/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/res/values-bs/values-bs.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

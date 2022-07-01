@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:untitled/screens/homescreen.dart';
+import 'package:untitled/screens/place_order.dart';
+import 'package:untitled/screens/screens.dart';
+import 'package:untitled/screens/sync_data.dart';
+import 'package:untitled/screens/sync_order.dart';
+import 'package:untitled/screens/temp_save_order.dart';
 
 import 'routes/get_routes.dart';
 
@@ -19,7 +24,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: HomeScreen(),
+      home: Sync_data(),
       getPages: AppPages.pages,
     );
   }

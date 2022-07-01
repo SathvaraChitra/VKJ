@@ -13,7 +13,7 @@ class HomeScreen extends GetView<HomeController> {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Getx Demo"),
+        title: const Text("Getx Demo2"),
       ),
       body: const Center(
         child: Text("Getx Demo"),
