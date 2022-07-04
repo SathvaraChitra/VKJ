@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:untitled/binding/binding.dart';
+import 'package:untitled/binding/temp_save_orderbinding.dart';
 import 'package:untitled/controller/controller.dart';
+import 'package:untitled/screens/temp_save_order.dart';
 
 class Place_order extends GetView<Place_orderController> {
   static String pageId = "/Place_order";
@@ -408,11 +410,11 @@ class Place_order extends GetView<Place_orderController> {
                     child: Obx(
                       ()=>
                       Checkbox(
-                        value: controller.valuefirst,
+                        value: controller.valuefirst.value,
                         checkColor: Colors.yellow,
                         activeColor: Colors.black,
                       onChanged: ( newValue) {
-                        controller.valuefirst = newValue!;
+                        controller.valuefirst = newValue!.obs;
                       },
 
                         )
@@ -553,7 +555,9 @@ class Place_order extends GetView<Place_orderController> {
                       width: 220,
                       child:ElevatedButton(
                         child: Text("TEMP SAVE", style: TextStyle(color: Colors.black, fontSize: 18),),
-                        onPressed: () => print("it's pressed"),
+                        onPressed: (){
+                          Get.to(Temp_save_order());
+                        },
                         style: ElevatedButton.styleFrom(
                           primary: Colors.yellow,
                           onPrimary: Colors.white,

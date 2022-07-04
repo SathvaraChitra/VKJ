@@ -25,93 +25,93 @@ class Sync_data extends GetView<Sync_dataController> {
           )
         ],
       ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(15),
-            child: Container(
-                height: 50,
-                width: double.infinity,
-                child:ElevatedButton(
-                  child: Text("Orders Sync", style: TextStyle(color: Colors.yellowAccent, fontSize: 18),),
-                  onPressed: (
-
-                      ) => print("it's pressed"),
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.black54,
-                    onPrimary: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                  ),
-                )
-            ),
-          ),
-          const SizedBox(
-            height: 5,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 15, right: 15),
-            child: Container(
-                height: MediaQuery.of(context).size.height * .06,
-                width: double.infinity,
-                child:ElevatedButton(
-                  child: Text("Retailer Syncs", style: TextStyle(color: Colors.yellowAccent, fontSize: 18),),
-                  onPressed: () {
-                    Get.to(Temp_save_order());
-                  },
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.black54,
-                    onPrimary: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                  ),
-                )
-            ),
-          ),
-          SizedBox(
-            height: 15,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 15, right: 15),
-            child: Container(
-              height: 40,
-              width: double.infinity,
-              child:OutlinedButton(
-                  onPressed: () {},
-                  child: Text('Sync from Database ',style: TextStyle(color: Colors.black, fontSize: 18),),
-                  style: ElevatedButton.styleFrom(
-                    side: BorderSide(width: 1.0, color: Colors.black),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
+      body: Center(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: Container(
+                  height: 50,
+                  width: double.infinity,
+                  child:ElevatedButton(
+                    child: Text("Orders Sync", style: TextStyle(color: Colors.yellowAccent, fontSize: 18),),
+                    onPressed: () => print("it's pressed"),
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.black54,
+                      onPrimary: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
                     ),
                   )
               ),
             ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 15, right: 15),
-            child: Container(
-                height: 50,
-                width: double.infinity,
-                child:ElevatedButton(
-                  child: Text("Sync All", style: TextStyle(color: Colors.black, fontSize: 18),),
-                  onPressed: () => print("it's pressed"),
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.yellow,
-                    onPrimary: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                  ),
-                )
+            const SizedBox(
+              height: 5,
             ),
-          ),
-        ],
+            Padding(
+              padding: const EdgeInsets.only(left: 15, right: 15),
+              child: Container(
+                  height: MediaQuery.of(context).size.height * .06,
+                  width: double.infinity,
+                  child:ElevatedButton(
+                    child: Text("Retailer Syncs", style: TextStyle(color: Colors.yellowAccent, fontSize: 18),),
+                    onPressed: () {
+                      Get.to(Temp_save_order());
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.black54,
+                      onPrimary: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    ),
+                  )
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 15, right: 15),
+              child: Container(
+                height: 40,
+                width: double.infinity,
+                child:OutlinedButton(
+                    onPressed: () {},
+                    child: Text('Sync from Database ',style: TextStyle(color: Colors.black, fontSize: 18),),
+                    style: ElevatedButton.styleFrom(
+                      side: BorderSide(width: 1.0, color: Colors.black),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    )
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 15, right: 15),
+              child: Container(
+                  height: 50,
+                  width: double.infinity,
+                  child:ElevatedButton(
+                    child: Text("Sync All", style: TextStyle(color: Colors.black, fontSize: 18),),
+                    onPressed: () => print("it's pressed"),
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.yellow,
+                      onPrimary: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    ),
+                  )
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

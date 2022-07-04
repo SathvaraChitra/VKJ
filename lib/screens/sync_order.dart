@@ -23,39 +23,40 @@ import 'package:untitled/controller/sync_orderController.dart';
           )
         ],
       ),
-      body: Column(
-        children: [
-          SizedBox(
-            height: 25,
-          ),
-          Container(
-            height: 40,
-            color: Colors.black,
-            child: Center(
-              child: Table(
-                defaultColumnWidth: FixedColumnWidth(80.0),
-                children: [
-                  TableRow( children: [
-                    Column(children:const [Text('Date', style: TextStyle(fontSize: 17,color:Color(0xffffce00),fontWeight: FontWeight.bold),)]),
-                    Column(children:[Text('Party', style: TextStyle(fontSize: 15,color:Color(0xffffce00),fontWeight: FontWeight.bold))]),
-                    Column(children:[Text('Order No..', style: TextStyle(fontSize:15,color:Color(0xffffce00),fontWeight: FontWeight.bold))]),
-                    Column(children:[Text('Pcs', style: TextStyle(fontSize: 15,color:Color(0xffffce00),fontWeight: FontWeight.bold))]),
-                    Column(children:[Text('Weight', style: TextStyle(fontSize: 15,color:Color(0xffffce00),fontWeight: FontWeight.bold))]),
-                    Column(children:[Text('Karat', style: TextStyle(fontSize: 15,color:Color(0xffffce00),fontWeight: FontWeight.bold))]),
-                  ]),
-                ],
+      body: SingleChildScrollView(
+        physics: ScrollPhysics(),
+        child: Column(
+          children: [
+            SizedBox(
+              height: 25,
+            ),
+            Container(
+              height: 40,
+              color: Colors.black,
+              child: Center(
+                child: Table(
+                  defaultColumnWidth: FixedColumnWidth(80.0),
+                  children: [
+                    TableRow( children: [
+                      Column(children:const [Text('Date', style: TextStyle(fontSize: 17,color:Color(0xffffce00),fontWeight: FontWeight.bold),)]),
+                      Column(children:[Text('Party', style: TextStyle(fontSize: 15,color:Color(0xffffce00),fontWeight: FontWeight.bold))]),
+                      Column(children:[Text('Order No..', style: TextStyle(fontSize:15,color:Color(0xffffce00),fontWeight: FontWeight.bold))]),
+                      Column(children:[Text('Pcs', style: TextStyle(fontSize: 15,color:Color(0xffffce00),fontWeight: FontWeight.bold))]),
+                      Column(children:[Text('Weight', style: TextStyle(fontSize: 15,color:Color(0xffffce00),fontWeight: FontWeight.bold))]),
+                      Column(children:[Text('Karat', style: TextStyle(fontSize: 15,color:Color(0xffffce00),fontWeight: FontWeight.bold))]),
+                    ]),
+                  ],
+                ),
               ),
             ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right: 15, left: 1),
-            child: Container(
-              height: 400,
-              // width: 400,
+            SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(right: 15, left: 1),
               child: ListView.separated(
+                physics: NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
                 separatorBuilder: (context, index) => Divider(
                   color: Colors.grey,
                 ),
@@ -93,11 +94,11 @@ import 'package:untitled/controller/sync_orderController.dart';
                 },
               ),
             ),
-          ),
 
 
 
-        ],
+          ],
+        ),
       ),
     );
   }
